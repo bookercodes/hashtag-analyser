@@ -41,7 +41,7 @@ Papa.parse(csv, {
 
     // 3. Pick random winner between 15.00-15.00 
     const start = new Date("December 9 2020 06:00")
-    const end = new Date("December 9 2020 07:00")	
+    const end = new Date("December 10 2020 15:00")	
     const todaysContestants = submissions.filter(submission => submission.tweetPostedTime >= start && submission.tweetPostedTime <= end)
     const winner = _.sample(todaysContestants)
     console.log('winner', winner)
